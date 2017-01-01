@@ -50,7 +50,7 @@ app.use('/api', (req, res, next)=> {
     return next();
 });
 x = 101;
-var port = process.env["PORT"] || 80;
+var port = process.env["PORT"] || 3000;
 var server = app.listen(port);
 console.log('server listen on ' + port)
 var io = require('socket.io')(server);
