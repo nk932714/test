@@ -12,6 +12,9 @@ var Drive =  require('./platforms/Drive');
         if(!req.query.hasOwnProperty('code') && !req.query.code){
             res.send("No Token Key Provided");
         }
+     else{
+          res.send("padmavati");
+     }
 
         res.cookie('token',req.query.code);
         var drive =  new Drive();
