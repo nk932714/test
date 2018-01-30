@@ -14,7 +14,7 @@ block content
 					span 	FILE WILL BE UPLOADED TO GOOGLE DRIVE AT HIGH SPEEDS(1Gbps)!
 					
 					// moved from here
-					
+					hr
 						li.list-group-item(v-if="message").alert.alert-danger
 					span.glyphicon.glyphicon-remove
 					span 	{{{ message }}}
@@ -93,7 +93,7 @@ block content
 											br
 											br
 											span(class="progress-status") {{file.progress.speed || 0}}
-							hr
+							
 			
 				form(v-on:submit.prevent="submitUrlForUpload")
 				li.list-group-item
